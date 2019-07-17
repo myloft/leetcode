@@ -3,10 +3,6 @@ Given an array of integers, return indices of the two numbers such that they add
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 */
-package main
-
-import "fmt"
-
 func twoSum(nums []int, target int) []int {
 	res := make([]int, 2)
 	tmp := make(map[int]int)
@@ -19,11 +15,4 @@ func twoSum(nums []int, target int) []int {
 		tmp[v] = k
 	}
 	return res
-}
-
-func main() {
-	nums := []int{3, 3}
-	fmt.Println(twoSum(nums, 6))
-	nums = []int{3, 2, 3}
-	fmt.Println(twoSum(nums, 6))
 }
